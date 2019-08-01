@@ -25,24 +25,30 @@ style.
     color:#000;
     position:relative;
   }
-  main.pug>li>a.h2:after{
+
+  main.pug>li>a.h2:after,main.pug>li>a.h2:before{
+    border-top:1px solid #f50;
     content:"";
     position:absolute;
-    border-top:1px solid #f50;
-    border-image:linear-gradient(90deg, #333,#eee 20%, transparent);
-    transition: all .5s;
-    border-image-slice: 10;
     left:0;
     bottom:-.6rem;
+  }
+  main.pug>li>a.h2:before{
     width:200%;
+    border-image:linear-gradient(90deg, #333,#eee 20%, transparent);
+    border-image-slice: 10;
     transform:scale(0.5);
     transform-origin:0 0;
+  }
+  main.pug>li>a.h2:after{
+    width:0;
+    transition: all .5s;
   }
   main.pug>li>a.h2:hover{
     color:#f50;
   }
   main.pug>li>a.h2:hover:after{
-    border-image:none;
+    width:100%;
   }
 
 main.pug
