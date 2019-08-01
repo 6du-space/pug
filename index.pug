@@ -7,6 +7,7 @@ style.
   }
   main.pug>h2.date{
     padding-top:3.5rem;
+    text-shadow: 1px 1px 0 #aaa;
     margin:0;
   }
   main.pug>h2.date:first-child{
@@ -21,9 +22,12 @@ style.
   main.pug>li>a.h2{
     font-family:html;
     font-size:1.3rem;
+    line-height:1.35;
+    text-shadow: 1px 1px 0 #eee;
     font-weight:bold;
     color:#000;
     position:relative;
+    padding-bottom:.6rem;
   }
 
   main.pug>li>a.h2:after,main.pug>li>a.h2:before{
@@ -31,7 +35,7 @@ style.
     content:"";
     position:absolute;
     left:0;
-    bottom:-.6rem;
+    bottom:0;
   }
   main.pug>li>a.h2:before{
     width:200%;
@@ -46,6 +50,7 @@ style.
   }
   main.pug>li>a.h2:hover{
     color:#f50;
+    text-shadow:none;
   }
   main.pug>li>a.h2:hover:after{
     width:100%;
